@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paid Media Performance Dashboard | Aashmi</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .project-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+            transition: gap 0.2s ease;
+        }
+
+        .back-link:hover {
+            gap: 12px;
+        }
+
+        .project-header {
+            margin-bottom: 48px;
+        }
+
+        .project-header .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .project-header .overview {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .project-section {
+            margin-bottom: 48px;
+        }
+
+        .project-section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--accent-primary);
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .features-list li {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .features-list li::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            border-radius: 50%;
+            background: var(--accent-gradient);
+            margin-top: 8px;
+        }
+
+        .dashboard-placeholder {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 60px 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-placeholder svg {
+            opacity: 0.3;
+            margin-bottom: 16px;
+        }
+
+        .dashboard-placeholder p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .kpi-value {
+            font-size: 1.7rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .kpi-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Aashmi<span class="logo-bracket">/&gt;</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="project-page">
+        <a href="../index.html#projects" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Projects
+        </a>
+
+        <div class="project-header">
+            <div class="project-tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Paid Media</span>
+                <span class="tag">Data Visualisation</span>
+                <span class="tag">Excel</span>
+            </div>
+            <h1>Paid Media Performance Dashboard</h1>
+            <p class="overview">
+                Built an interactive Tableau dashboard tracking paid media performance across Google Ads, Meta, LinkedIn, and TikTok, covering 2 years of daily campaign data with KPIs including spend, ROAS, CTR, CPC, and conversions.
+            </p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; margin-bottom: 40px;">
+            <a href="https://public.tableau.com/app/profile/aashmi.bhattarai/viz/PaidMediaPerformanceDashboard_17714378727740/Dashboard1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Dashboard
+            </a>
+            <a href="../data/paid_media_data.csv" download class="btn btn-secondary" style="display:inline-flex; align-items:center; gap:8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Data (CSV)
+            </a>
+        </div>
+
+        <!-- Tableau Embed -->
+        <div class="project-section">
+            <h2>Interactive Dashboard from Tableau</h2>
+            <div style="overflow-x: auto;">
+                <div class='tableauPlaceholder' id='viz1771438453963' style='position: relative'>
+                    <noscript>
+                        <a href='#'><img alt='Paid Media Performance Dashboard' src='https://public.tableau.com/static/images/Pa/PaidMediaPerformanceDashboard_17714378727740/Dashboard1/1_rss.png' style='border: none' /></a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='PaidMediaPerformanceDashboard_17714378727740&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Pa/PaidMediaPerformanceDashboard_17714378727740/Dashboard1/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1771438453963');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) { vizElement.style.width='1200px'; vizElement.style.height='827px'; }
+                    else if (divElement.offsetWidth > 500) { vizElement.style.width='1200px'; vizElement.style.height='827px'; }
+                    else { vizElement.style.width='100%'; vizElement.style.height='2077px'; }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+        </div>
+
+        <!-- KPI Summary -->
+        <div class="project-section">
+            <h2>Campaign Overview (2023–2024)</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-value">4</div>
+                    <div class="kpi-label">Channels Tracked</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">12</div>
+                    <div class="kpi-label">Campaigns Analysed</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">2 Yrs</div>
+                    <div class="kpi-label">Date Range</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">8</div>
+                    <div class="kpi-label">KPIs Visualised</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Dashboard Features</h2>
+            <ul class="features-list">
+                <li>Interactive filters for date range, channel, and campaign, allowing drill-down from top-level totals to individual campaign performance.</li>
+                <li>KPI summary cards showing total Spend, Impressions, Clicks, Conversions, CTR, CPC, CPA, and ROAS at a glance.</li>
+                <li>Trend line chart tracking daily and monthly spend and conversions over 2 years, with clear Q4 seasonality peaks visible.</li>
+                <li>Channel comparison bar charts showing how Google Ads, Meta, LinkedIn, and TikTok stack up on efficiency metrics (CPC, CPA, ROAS).</li>
+                <li>Campaign-level performance table ranking all 12 campaigns by ROAS, enabling quick identification of top and underperforming campaigns.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
